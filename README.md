@@ -1,13 +1,5 @@
 # KochSnowflake
 
-  A recursive procedure is used to create the Koch Snowflake. A single line segment is split into three equal parts at each recursive step, resulting in four smaller segments. 
-The middle third of the line is replaced with two sides of an equilateral triangle, pointing outward from the original segment. 
-In particular, this includes identifying the apex of the equilateral triangle that the middle third forms and determining the two division points that trisect the segment.
-Translating the middle third and then rotating it by ±60° with respect to the direction of the segment yields the apex.
-Recursion's base case occurs when the line segment's length falls below a predetermined minimum (such as epsilon) or after a predetermined number of recursive steps. 
+The Koch Snowflake is created by a recursive procedure. In each recursive step, a single line segment is divided into three equal pieces and replaced by four smaller segments. The middle third of the line is replaced by two sides of an equilateral triangle, pointing outward from the original segment. Specifically, it involves finding the vertex of the equilateral triangle that the middle third forms and determining the two division points that trisect the segment. Translation of the middle third followed by rotation by ± 60° relative to the direction of the segment produces the vertex. The base case for recursion happens when the length of a line segment is less than a certain minimum, epsilon, or after a specific amount of recursive steps.
 
-  The segment is drawn without any additional subdivision at this point, and the recursion ends.
-The vertices of the triangle can be positioned in relation to the original line segment's endpoints using translation to make the implementation simpler. 
-The triangular peak can then be created by rotating the middle third to change its direction. 
-The fractal pattern is gradually revealed by recursively applying this procedure to each of the four resulting segments. 
-This method guarantees that the Koch Snowflake increases in complexity as intended and stops when the required level of detail is reached.
+In this case, the segment is drawn without further subdivision and recursion stops. To make implementation easier, the vertices of the triangle can be positioned relatively close to the endpoints of the original line segment by using translation. Next, the triangular peak can be formed by rotating the middle third to change its facing. This process is applied to every one of the four remaining parts produced by the recursion of this fractal pattern. In this fashion, this approach guarantees the Koch Snowflake is growing in complexity as it ought and stops when the desired degree of detail is reached.
